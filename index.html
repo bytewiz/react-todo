@@ -2,10 +2,35 @@
 <html>
   <head>
     <title>Sample App</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     <div id='root'>
     </div>
     <script src="/static/bundle.js"></script>
   </body>
+  <style>
+  .example-enter {
+    opacity: 0.01;
+    transform: translateY(-50px);
+  }
+
+  .example-enter.example-enter-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 375ms ease-out;
+  }
+
+  .example-leave {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: all 375ms ease-out;
+    transform: translateY(-50px);
+  }
+  </style>
 </html>
